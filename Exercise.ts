@@ -12,22 +12,23 @@ if(bilangan % 2 == 0) {
 // Soal 2
 // Memeriksa apakah bilangan Prima
 
-let cekBilangan = 13; 
+const _number2: number = 2; 
+let isPrime: boolean = true; 
 
-if(cekBilangan === 2  ) {
-    console.log(`${cekBilangan} adalah bilangan Prima`);
-} else if (cekBilangan === 1) {
-    console.log(`${cekBilangan} bukan bilangan prima`)
-} else if (cekBilangan % 2 !== 0) {
-    console.log(`${cekBilangan} adalah bilangan Prima`)
-} else {
-    console.log(`${cekBilangan} bukan bilangan prima`)
-}
+for (let i: number = 2; i < _number2; i++) {
+        if(_number2 % i === 0) {
+            isPrime = false; 
+            break;
+        }
+    }    
+console.log(isPrime); 
+
+
 
 // Soal 3 
 // bilangan 3 = 1 + 2 + 3 
 
-let N = 5;
+let N = 3;
 let total = 0; 
  
 for (let i = 0; i <= N; i++) { 
